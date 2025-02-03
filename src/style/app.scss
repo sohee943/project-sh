@@ -1,11 +1,9 @@
 $mobile:480px;
-
 @mixin mobile {
     @media screen and (max-width:$mobile){
         @content
     }
 }
-
 .app{
     text-align: center;
     white-space: pre-wrap;
@@ -15,12 +13,15 @@ $mobile:480px;
     justify-content: center;  
     margin: 0;
     padding: 0;
-    .bg-size {
-        height: 100vh;
-        width: 100vw;
-        background-color:red;
-        @include mobile{
-            background-color: antiquewhite;
-        }
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    @include mobile{
+        background-color:violet;
+    }
+    .mobile-bg{
+        width: 390px;
+        height: 844px;
+        background-color: white;
     }
 }

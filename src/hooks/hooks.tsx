@@ -1,17 +1,20 @@
-import React, { createContext } from "react";
-// import { UserContext } from './context'; // 컨텍스트 객체 가져오기
-import Start from "../pages/start/start.tsx"
-const MoveStatus = createContext<boolean>(false);
+// import React, { createContext } from "react";
+// // import { UserContext } from './context'; // 컨텍스트 객체 가져오기
+// import Start from "../pages/start/start.tsx"
+// const MoveStatus = createContext<boolean>(false);
 
-const GbPage = () => {
-    const move: boolean = false
-    return(
-        <>
-        <MoveStatus.Provider value={move}>
-            
-        </MoveStatus.Provider>
-        </>
-    )
-};
+// const GbPage = () => {
+//     const move: boolean = false
+//     return(
+//         <>
+//         <MoveStatus.Provider value={move}>
+//             <div>
+                
+//                 <Start />
+//             </div>
+//         </MoveStatus.Provider>
+//         </>
+//     )
+// };
 
-export {MoveStatus, GbPage};
+// export {MoveStatus, GbPage};
